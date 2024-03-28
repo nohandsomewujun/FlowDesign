@@ -548,33 +548,4 @@ if __name__ == '__main__':
         split=args.split, 
         reset=args.reset
     )
-    """
-    valid = 0
-    for i in range (len(dataset)):
-    """
-    """
-        if dataset[i]['id'] == '':
-            print(dataset[i]['generate_flag'])
-            print(dataset[i]['template']['generate_flag'])
-    """
-    """
-        if dataset[i]['template_enable']:
-            if (dataset[i]['generate_flag'] == True).sum() != (dataset[i]['template']['generate_flag'] == True).sum():
-                print(dataset[i]['id'])
-
-    print(valid)
-    print(len(dataset))
-    """
     print(dataset[0])
-
-
-    
-
-    """
-    a = dataset[4]['heavy']['pos_heavyatom']
-    b = dataset[4]['template']['heavy']['pos_heavyatom']
-    diff = a != b
-    indices = torch.nonzero(diff)
-    print(indices)
-    print(len(dataset), len(dataset.clusters))
-    """
