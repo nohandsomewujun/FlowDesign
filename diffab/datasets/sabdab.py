@@ -234,18 +234,11 @@ class SAbDabDataset(Dataset):
         os.makedirs(processed_dir, exist_ok=True)
         
         try:
-            with open ('/datapool/data2/home/majianzhu/rectflow_seq_sabdab/template/dict.pkl', 'rb') as fin:
+            with open ('./template/dict.pkl', 'rb') as fin:
                 self.pkl_dict = pickle.load(fin)
         except:
             self.pkl_dict = None
             logging.warning('no template dict file found.')
-        try:
-            with open ('/datapool/data2/home/majianzhu/rectflow_seq_sabdab/KICDATA/predictseq/dict.pkl', 'rb') as fin:
-                self.pkl_dict1 = pickle.load(fin)
-        except:
-            self.pkl_dict1 = None
-            logging.warning('no template dict file found.')
-
 
         self.sabdab_entries = None
         self._load_sabdab_entries()
@@ -280,10 +273,6 @@ class SAbDabDataset(Dataset):
                     nan_to_empty_string(row['antigen_chain'])
                 ))
             )
-            # filter in dict
-            #if not self.pkl_dict1.get(entry_id):
-            #    continue
-            
 
             ag_chains = split_sabdab_delimited_str(
                 nan_to_empty_string(row['antigen_chain'])
