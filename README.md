@@ -13,7 +13,7 @@ The default `cudatoolkit` version is 11.3. You may change it in [`env.yaml`](./e
 
 ### Data Preparation
 
-Protein structures in the `SAbDab` dataset can be downloaded [**here**](https://opig.stats.ox.ac.uk/webapps/newsabdab/sabdab/archive/all/). We have also provided [data](https://drive.google.com/file/d/1q2CQLVvaWLnyNIDoD9ZW9cKkQHK_8j9j/view?usp=drive_link) we used according to `sabdab_summary_all.csv`.   Extract `all_structures.zip` into the `data` folder. 
+Protein structures in the `SAbDab` dataset can be downloaded [**here**](https://opig.stats.ox.ac.uk/webapps/newsabdab/sabdab/archive/all/). We have also provided [data](https://drive.google.com/file/d/1q2CQLVvaWLnyNIDoD9ZW9cKkQHK_8j9j/view?usp=sharing) we used according to `sabdab_summary_all.csv`.   Extract `all_structures.zip` into the `data` folder. 
 
 For the preparation of templates used in the training and inference process, we have provided the data utilized during our experimental procedures. Please download [it](https://drive.google.com/file/d/1LFnvSkvUWl8fjAxOfGus1Qf9QnCirq-M/view?usp=drive_link) and extract template.zip into the project directory. 
 
