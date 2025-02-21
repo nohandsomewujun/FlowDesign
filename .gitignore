@@ -1,2 +1,3 @@
-__pycache__/
-.DS_Store
+__pycache__/ #python编译器生成的缓存
+.DS_Store #mac trash
+# 告诉git忽略这些文件
